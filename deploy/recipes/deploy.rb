@@ -12,7 +12,7 @@ end
 script "install_composer" do
   interpreter "bash"
   user "root"
-  cwd "/var/app"
+  cwd app_path
   code <<-EOH
   composer install --prefer-source --optimize-autoloader  --no-interaction
   EOH
